@@ -4,6 +4,8 @@
   --muted: #667085;
   --surface: #f8f9fd;
   --soft: #eef2ff;
+  --surface: #ffffff;
+  --soft: #f5f7fb;
   --brand: #2563eb;
   --accent: #f59e0b;
   --sky: #38bdf8;
@@ -48,6 +50,9 @@ button {
     linear-gradient(120deg, rgba(37, 99, 235, 0.35), rgba(139, 92, 246, 0.35), rgba(245, 158, 11, 0.3)),
     url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80")
       center/cover;
+  background: linear-gradient(120deg, rgba(37, 99, 235, 0.3), rgba(139, 92, 246, 0.3), rgba(245, 158, 11, 0.28)),
+      url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
   padding: 2.5rem 6vw 4rem;
   position: relative;
   overflow: hidden;
@@ -58,6 +63,7 @@ button {
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, rgba(56, 189, 248, 0.32), rgba(52, 211, 153, 0.24), rgba(163, 230, 53, 0.18));
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.28), rgba(52, 211, 153, 0.2));
   mix-blend-mode: screen;
   animation: gradientShift 12s ease-in-out infinite;
 }
@@ -87,6 +93,7 @@ button {
 
 .nav-cta {
   background: linear-gradient(135deg, var(--navy), #1f2937);
+  background: linear-gradient(135deg, var(--ink), #1f2937);
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
@@ -131,6 +138,11 @@ button {
   padding: 0.85rem 1.8rem;
   border-radius: 999px;
   box-shadow: 0 12px 24px rgba(37, 99, 235, 0.28);
+  background: linear-gradient(135deg, var(--brand), var(--violet));
+  color: #fff;
+  padding: 0.85rem 1.8rem;
+  border-radius: 999px;
+  box-shadow: 0 12px 24px rgba(37, 99, 235, 0.25);
 }
 
 .ghost {
@@ -190,12 +202,43 @@ button {
   text-decoration: none;
 }
 
+.hero-card form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.hero-card label {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.hero-card input,
+.hero-card select {
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.full {
+  width: 100%;
+}
+
+.form-note {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
 .section {
   padding: 4rem 6vw;
 }
 
 .section.alt {
   background: linear-gradient(135deg, rgba(238, 242, 255, 0.8), rgba(255, 247, 237, 0.7));
+  background: var(--soft);
 }
 
 .section-header {
@@ -223,6 +266,7 @@ button {
 
 .tour-card {
   background: rgba(255, 255, 255, 0.92);
+  background: #fff;
   border-radius: 20px;
   padding: 1.8rem;
   border: 1px solid var(--border);
@@ -234,6 +278,8 @@ button {
 .tour-tag {
   background: rgba(139, 92, 246, 0.18);
   color: var(--violet);
+  background: rgba(37, 99, 235, 0.12);
+  color: var(--brand);
   width: fit-content;
   padding: 0.3rem 0.8rem;
   border-radius: 999px;
@@ -251,6 +297,7 @@ button {
 .service-card,
 .contact-card {
   background: rgba(255, 255, 255, 0.92);
+  background: #fff;
   border-radius: 18px;
   padding: 1.5rem;
   border: 1px solid var(--border);
@@ -259,6 +306,7 @@ button {
 
 .review-grid figure {
   background: rgba(255, 255, 255, 0.92);
+  background: #fff;
   border-radius: 20px;
   padding: 2rem;
   border: 1px solid var(--border);
